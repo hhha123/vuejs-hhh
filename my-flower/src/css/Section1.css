@@ -1,0 +1,23 @@
+/*section---------------------------------------------------*/
+section{
+	flex: 1;
+}
+.mint-swipe{
+	width: 100%;
+	overflow: hidden;
+	height: 1.8rem;
+}
+.mint-swipe-items-wrap{
+	width: 300%;
+	display: flex;
+}
+.mint-swipe-item{
+	width: 100%;
+}
+.mint-swipe-item img{
+	width: 3.75rem;
+	height: 1.8rem;
+}
+.mint-swipe-indicator{
+	border: 1px solid #fff;
+}
