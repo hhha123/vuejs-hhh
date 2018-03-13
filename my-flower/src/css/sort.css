@@ -1,0 +1,140 @@
+/*header-------------------------------------------------*/
+header{
+	height: .45rem;
+	background-color: #DBFFFF;
+	text-align: center;
+    padding: 0 .12rem;
+    position: relative;
+}
+header p{
+	font-size: .16rem;
+    line-height: .45rem;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: clip;
+    overflow: hidden;
+}
+header .icon-arrow-left{
+	display: inline-block;
+    width: .24rem;
+    height: .24rem;
+    background: url(../imgs/iconLeft.png) no-repeat center center;
+    background-size:100% ;
+    position: absolute;
+    left: .12rem;
+    top: .1rem;
+}
+header .icon-menu{
+	display: inline-block;
+    width: .24rem;
+    height: .24rem;
+    background: url(../imgs/iconMenu.png) no-repeat center center;
+    background-size:100% ;
+    position: absolute;
+    right: .16rem;
+    top: .1rem;
+    
+}
+/*section--------------------------------------------------*/
+.banner img{
+	width: 100%;
+	height: 3.75rem;
+}
+.product{
+	background-color: #f5f5f5;
+    padding: 0 .08rem;
+}
+.product .proTitle{
+	text-align: center;
+	padding: .19rem 0 .16rem;
+    font-size: .16rem;
+}
+.proTitle .product-title-name{
+	position: relative;
+    width: 100%;
+    color: #000;
+    letter-spacing: .03rem;
+    font-size: .16rem;
+}
+.product-title-name p{
+	position: relative;
+    display: inline-block;
+    padding: 0 .16rem;
+    z-index: 8;
+    background-color: #F5F5F5;
+}
+.product-title-line{
+	position: absolute;
+    z-index: 6;
+    top: 50%;
+    margin-top: -.02rem;
+    box-sizing: content-box;
+    width: 100%;
+    height: .02rem;
+    border-top: 1px solid #bcbcbc;
+    border-bottom: 1px solid #bcbcbc;
+}
+.product-title-desc{
+	color: #777;
+    font-size: .75em;
+    letter-spacing: .016rem;
+}
+.proList{
+	display:flex;
+	flex-wrap: wrap;
+}
+.pro-item{
+	width: 50%;
+}
+.full{
+	width: 100%;
+	margin-bottom: .18rem;
+}
+.pro-pic{
+	position: relative;
+    overflow: hidden;
+}
+.pro-pic img{
+	width: 100%;
+    vertical-align: middle;
+}
+.pro-pic .product-tag{
+	position: absolute;
+    top: 5.5%;
+    left: 3.3%;
+    font-size: .1rem;
+    color: #fff;
+    background-color: #c56ba2;
+    padding:.02rem .04rem;
+}
+.pro-infor{
+	padding: .12rem;
+    background-color: #fff;
+    font-size: .12rem;
+}
+.pro-infor .product-info-desc{
+	color: #777;
+    font-size: .83333333em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.pro-infor .product-info-line{
+	width: 50%;
+	background-color: #bcbcbc;
+    height: .01rem;
+    margin: .05rem 0;
+}
+.pro-infor .product-info-name{
+	color: #232323;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.pro-infor .product-info-price{
+	color: #c56ba2;
+}
+.product-info-price span:before{
+	content: "￥";
+    font-family: arial;
+}

@@ -1,0 +1,54 @@
+{
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" },
+  "product":[
+         {"title":"送女神的鲜花",
+          "text":"爱要有回应才能永久",
+          "name":"最适合长相甜美的小姐姐了",
+          "detail":"甜美公主 · 白玫瑰22枝，粉佳人粉玫瑰14枝，粉色桔梗5枝",
+          "price":"378",
+          "img":"https://img02.hua.com/zhuanti/womanday/2018/m/9012154.jpg",
+          "list":[
+            {"namec":"11枝红玫瑰 最适合表心意了","detail":"一心一意 · 玫瑰11枝，粉色勿忘我0.3扎","price":"137","imgc":"//img01.hua.com/uploadpic/newpic/201709151725388540.jpg"},
+            {"namec":"11枝红玫瑰 最适合表心意了","detail":"一心一意 · 玫瑰11枝，粉色勿忘我0.3扎","price":"137","imgc":"//img01.hua.com/uploadpic/newpic/9010869.jpg"},
+            {"namec":"11枝红玫瑰 最适合表心意了","detail":"一心一意 · 玫瑰11枝，粉色勿忘我0.3扎","price":"137","imgc":"//img01.hua.com/uploadpic/newpic/201711231647550182.jpg"},
+            {"namec":"11枝红玫瑰 最适合表心意了","detail":"一心一意 · 玫瑰11枝，粉色勿忘我0.3扎","price":"137","imgc":"//img01.hua.com/uploadpic/newpic/9012011.jpg"},
+            {"namec":"11枝红玫瑰 最适合表心意了","detail":"一心一意 · 玫瑰11枝，粉色勿忘我0.3扎","price":"137","imgc":"//img01.hua.com/uploadpic/newpic/9012098.jpg"},
+            {"namec":"11枝红玫瑰 最适合表心意了","detail":"一心一意 · 玫瑰11枝，粉色勿忘我0.3扎","price":"137","imgc":"//img01.hua.com/uploadpic/newpic/9012209.jpg"}
+         
+         ]},
+         {"title":"送男神的鲜花",
+         "text":"男生也会期待小惊喜",
+         "name":"低调大气的惊喜礼盒",
+         "detail":"一往情深 · 精品玫瑰礼盒:19枝红玫瑰，勿忘我适量",
+          "price":"245",
+         "img":"https://img02.hua.com/zhuanti/womanday/2018/m/9010966.jpg",
+         "list":[
+            {"namec":"干净素雅的黑色包装","detail":"爱是唯一 · 雪山白玫瑰11枝、白百合3枝","price":"296","imgc":"//img01.hua.com/uploadpic/newpic/9012222.jpg"},
+            {"namec":"干净素雅的黑色包装","detail":"爱是唯一 · 雪山白玫瑰11枝、白百合3枝","price":"296","imgc":"//img01.hua.com/uploadpic/newpic/9012174.jpg"},
+            {"namec":"干净素雅的黑色包装","detail":"爱是唯一 · 雪山白玫瑰11枝、白百合3枝","price":"296","imgc":"//img01.hua.com/uploadpic/newpic/9010947.jpg"},
+            {"namec":"干净素雅的黑色包装","detail":"爱是唯一 · 雪山白玫瑰11枝、白百合3枝","price":"296","imgc":"//img01.hua.com/uploadpic/newpic/9010969.jpg"},
+            {"namec":"干净素雅的黑色包装","detail":"爱是唯一 · 雪山白玫瑰11枝、白百合3枝","price":"296","imgc":"//img01.hua.com/uploadpic/newpic/9010932.jpg"},
+            {"namec":"干净素雅的黑色包装","detail":"爱是唯一 · 雪山白玫瑰11枝、白百合3枝","price":"296","imgc":"//img01.hua.com/uploadpic/newpic/9012223.jpg"}        
+         ]},
+         {"title":"永生花",
+         "text":"他能代表时间的承诺",
+         "name":"粉嫩色彩 瞬间俘获少女心",
+         "detail":"小仙女 · 日本进口粉紫色大地永生玫瑰，奥斯丁永生玫瑰，搭配绣球等花材",
+          "price":"368",
+         "img":"https://img02.hua.com/zhuanti/womanday/2018/m/1073151.jpg",
+         "list":[
+            {"namec":"设计感十足的永生花搭配","detail":"Be My Love · 厄瓜多尔进口红色永生玫瑰2枝，进口白色永生玫瑰1枝，棉花2朵，粉色珍珠5颗","price":"398","imgc":"//img01.hua.com/uploadpic/newpic/1073155.jpg"},
+            {"namec":"设计感十足的永生花搭配","detail":"Be My Love · 厄瓜多尔进口红色永生玫瑰2枝，进口白色永生玫瑰1枝，棉花2朵，粉色珍珠5颗","price":"398","imgc":"//img01.hua.com/uploadpic/newpic/1073034.jpg"},
+            {"namec":"设计感十足的永生花搭配","detail":"Be My Love · 厄瓜多尔进口红色永生玫瑰2枝，进口白色永生玫瑰1枝，棉花2朵，粉色珍珠5颗","price":"398","imgc":"//img01.hua.com/uploadpic/newpic/1073033.jpg"},
+            {"namec":"设计感十足的永生花搭配","detail":"Be My Love · 厄瓜多尔进口红色永生玫瑰2枝，进口白色永生玫瑰1枝，棉花2朵，粉色珍珠5颗","price":"398","imgc":"//img01.hua.com/uploadpic/newpic/1073094.jpg"},
+            {"namec":"设计感十足的永生花搭配","detail":"Be My Love · 厄瓜多尔进口红色永生玫瑰2枝，进口白色永生玫瑰1枝，棉花2朵，粉色珍珠5颗","price":"398","imgc":"//img01.hua.com/uploadpic/newpic/1073125.jpg"},
+            {"namec":"设计感十足的永生花搭配","detail":"Be My Love · 厄瓜多尔进口红色永生玫瑰2枝，进口白色永生玫瑰1枝，棉花2朵，粉色珍珠5颗","price":"398","imgc":"//img01.hua.com/uploadpic/newpic/1073100.jpg"}   
+          ]}   
+  ]
+}
