@@ -48,7 +48,26 @@
 				    </div>
 				</div>
 			</div>
-		    
+		     <div class="end">
+	    	  <ul class="end_nav">
+	            <li><a href="javascript:;">帮助</a></li>
+	            <li><a href="javascript:;">查单</a></li>
+	            <li><a href="javascript:;">花语大全</a></li>
+	        </ul>
+	        <ul class="entrance">
+	            <li>
+	            	<a href="javascript:;">
+	            	  <span class="icon-phone"></span>
+	            	</a>
+	            </li>
+	            <li>
+	            	<a href="javascript:;" target="_blank" class="kehu">
+	            		<span class="icon-kefu"></span>
+	            	</a>
+	            </li>
+	        </ul>
+	        <p class="copyright">Copyright © 2005~2018 花礼网(中国鲜花礼品网) 版权所有</p>
+	    </div>
 		</section>
 	</div>
 </template>

@@ -1,3 +1,4 @@
+img{display:inline-block;border:0;vertical-align: middle;}
 /*header-------------------------------------------------*/
 header{
 	height: .45rem;
@@ -42,7 +43,6 @@ header .icon-menu{
 }
 .product{
 	background-color: #f5f5f5;
-    padding: 0 .08rem;
 }
 .product .proTitle{
 	text-align: center;
@@ -85,10 +85,14 @@ header .icon-menu{
 }
 .pro-item{
 	width: 50%;
+	margin-bottom: .18rem;
+}
+.pro-item a{
+	display: block;
+    padding: 0 .08rem;
 }
 .full{
 	width: 100%;
-	margin-bottom: .18rem;
 }
 .pro-pic{
 	position: relative;
@@ -138,3 +142,58 @@ header .icon-menu{
 	content: "￥";
     font-family: arial;
 }
+/*结束-----------------------------------------------------*/
+.end{
+    margin-top: .08rem;
+}
+.end .end_nav{
+	padding: .16rem 0;
+	display: flex;
+	justify-content: space-around;
+}
+.end .end_nav li{
+	height: .24rem;
+	line-height: .24rem;
+	text-align: center;
+	background: #eeeeee;
+}
+.end .end_nav li a{
+	display: block;
+	width: .86rem;
+	border-radius: .02rem;
+}
+.end .end_nav li:nth-child(2) a{
+	width: .62rem;
+}
+.end .entrance{
+  padding: .14rem 10%;
+  height: .92rem;
+  border-bottom: 1px solid #eee;
+}
+.entrance li{
+	float: left;
+    width: 50%;
+    text-align: center;
+}
+.entrance li span{
+    width: .38rem;
+    height: .59rem;
+	display: inline-block;
+}
+.entrance .icon-phone{
+	background: url(../imgs/end1.png) no-repeat center center;
+	background-size: 100%;
+}
+.entrance .icon-kefu{
+	background: url(../imgs/end2.png) no-repeat center center;
+	background-size: 100%;
+}
+.copyright{
+	/*height: .65rem;*/
+	border-top: 1px solid #eee;
+    font-size: .1rem;
+    text-align: center;
+    color: #ccc;
+    padding: .16rem 0;
+}
+

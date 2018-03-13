@@ -9,24 +9,6 @@
 	  				<span>{{item.name}}</span>
 	  			</router-link>
 	  		</li>
-	  		<!--<li>
-	  			<router-link active-class="active" to="Section2">
-	  				<img src="../imgs/foot2.png"/>
-	  				<span>分类</span>
-	  			</router-link>
-	  		</li>
-	  		<li>
-	  			<router-link active-class="active" to="Section3">
-	  				<img src="../imgs/foot3.png"/>
-	  				<span>购物车</span>
-	  			</router-link>
-	  		</li>
-	  		<li>
-	  			<router-link active-class="active" to="Section4">
-	  				<img src="../imgs/foot4.png"/>
-	  				<span>我的</span>
-	  			</router-link>
-	  		</li>-->
 	  	</ul>
 	  </footer>
   </div>
@@ -46,17 +28,18 @@ export default {
     }
   },
   mounted (){
-  	 this.changeImg(0);
+	 this.changeImg(0);
   },
   methods: {
-  	changeImg(index){
+	changeImg(index){
 	  		this.list[index].img = "../../static/active" + (index+1) +".png";
-  	}
-  }
+	}
+}
  }
 </script>
 
 <style scoped>
+img{display:inline-block;border:0;vertical-align: middle;}
 /*footer----------------------------------------------------*/
 footer{
 	height: auto;

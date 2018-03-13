@@ -1,0 +1,139 @@
+#type{ 
+   
+    .top_bar{   
+        width:100%;        
+        padding:.07rem .16rem;
+        background:#f6f6f6;
+        font-size:.12rem;        
+        form{      
+            display:flex;
+            justify-content:space-between;
+            padding:.09rem .05rem;              
+            background:#fff;
+            height:.3rem;            
+            span{
+                width:.24rem;
+                height:.24rem;
+                background:url(../static/imgs/icon_Search.png) no-repeat ;
+                background-size:.24rem;  
+                margin-top:-.06rem;
+            }
+        }
+    }
+    .all_type{
+        flex:1;
+        display:flex; 
+        position:relative;         
+        .all_left{            
+            display:flex;
+            flex-direction:column;
+            width:.94rem;
+            background:#f6f6f6;
+            height:5.76rem;  
+            font-size:.11rem;                     
+            a{
+                display:block;
+                width:.94rem;
+                height:.48rem;               
+                line-height:.48rem; 
+                text-align:center;  
+                color:#333;             
+            }
+            a.red{
+                background:#fff;
+                color:red;
+            }            
+        }
+        .all_right{
+            position:absolute;
+            top:0;
+            right:0;
+            overflow-y:auto;
+            height:5.76rem;
+            display:flex;
+            flex-direction:column;
+            width:2.81rem;
+            padding:.08rem;            
+            height:100%;
+            .right_top_banner{                
+                display:block;                              
+                position:relative;
+                img{
+                    width:100%;   
+                    height:100%;                 
+                }
+                div{
+                    width:100%;
+                    height:100%;
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    background:rgba(51,51,51,.4);
+                    
+                    p{
+                        width:100%;
+                        position:absolute;
+                        top:50%; 
+                        margin-top:-.06rem;
+                        text-align:center;                 
+                        font-size:.11rem;
+                        color:#fff;
+                    }
+                }
+            }
+            .right_content{               
+                .title{ 
+                   display:flex;
+                   justify-content:space-between;  
+                   font-size:.12rem;                
+                   margin:.19rem 0 .21rem 0;  
+                   a{
+                       color:#333;
+                   }                  
+                }
+                ul{
+                    display:flex;
+                    flex-wrap:wrap;
+                   li{  
+                        width:33.3%;  
+                        margin-bottom:.04rem;                                       
+                        a{
+                            width:100%;                                                                                                  
+                            img{
+                               width:.56rem;                             
+                               margin:auto;
+                            }
+                            
+                            p{
+                                width:100%;
+                                margin:.03rem 0 .05rem 0;
+                                font-size:.1rem;
+                                text-align:center;
+                                color:#666;
+                            }
+                        }
+                        .disp{
+                                display:flex;   
+                                padding:.13rem .08rem;  
+                                border-right:1px solid #ccc;                           
+                                border-bottom:1px solid #ccc;                           
+                                img{
+                                    width:.2rem;                                    
+                                }
+                            }
+                    }
+                    .mar0{
+                        margin-bottom:0;                       
+                    } 
+                }
+                .bor{
+                    border-top:1px solid #ccc;
+                    border-left:1px solid #ccc;
+                }
+            }          
+        }
+        
+    } 
+   
+}
+

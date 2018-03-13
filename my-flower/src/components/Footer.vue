@@ -28,6 +28,7 @@ export default {
 </script>
 
 <style scoped="scoped">
+img{display:inline-block;border:0;vertical-align: middle;}
 footer{
 	height: auto;
 	background: #fff;
