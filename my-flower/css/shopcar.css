@@ -1,20 +1,39 @@
 #shopcar .shopcar_top {
-  line-height: .44rem;
-  height: .44rem;
-  width: 100%;
-  padding: 0 0.12rem;
+	height: .44rem;
+	text-align: center;
+	padding: 0 .12rem;
+	position: relative;
   background: #fafafa;
-  display: flex;
-  justify-content: space-between;
   border-bottom: 1px solid #e4e4e4; }
-  #shopcar .shopcar_top span {
-    font-size: .17rem; }
-  #shopcar .shopcar_top img {
+  #shopcar .shopcar_top p {
+    font-size: .17rem;
+    line-height: .45rem;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: clip;
+    overflow: hidden; }
+  #shopcar .shopcar_top .icon-arrow-left {
+    display: inline-block;
     width: .24rem;
     height: .24rem;
-    margin-top: .1rem; }
+    background: url(../src/imgs/iconLeft.png) no-repeat center center;
+    background-size:100% ;
+    position: absolute;
+    left: .12rem;
+    top: .1rem; }
+.shopcar_top .icon-menu{
+	  display: inline-block;
+    width: .24rem;
+    height: .24rem;
+    background: url(../src/imgs/iconMenu.png) no-repeat center center;
+    background-size:100% ;
+    position: absolute;
+    right: .16rem;
+    top: .1rem;
+}
 #shopcar .box {
-  font-size: .14rem; }
+  font-size: .14rem;
+  }
   #shopcar .box img {
     width: 100%;
     margin: .3rem 0 .1rem 0; }
@@ -31,5 +50,12 @@
     text-align: center;
     margin: .2rem auto;
     border-radius: .03rem; }
-
+#shopcar .shopTitle{
+	border-top: .1rem solid #f4f4f4;
+	color: #111;
+	font-size: .14rem;
+	height: .46rem;
+    line-height:.38rem;
+    padding: 0 .1rem;
+}
 /*# sourceMappingURL=shopcar.css.map */

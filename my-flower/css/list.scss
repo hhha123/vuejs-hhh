@@ -1,0 +1,94 @@
+#list{    
+    .top{
+        display:flex;
+        justify-content:space-between;
+        padding:.1rem .06rem;
+        height:.45rem;
+        img{
+            width:.24rem;
+            height:.24rem;
+        }
+        img:nth-child(2){
+            width:.7rem;
+            height:.17rem;
+            margin-top:.05rem;
+        }
+    }
+    .nav{
+        display:flex;
+        font-size:.12rem;        
+        justify-content:space-around;    
+        border-top:1px solid #ddd;
+        border-left:1px solid #ddd;    
+        a{
+            flex:1;
+             height:.42rem;
+            line-height:.42rem;
+            text-align:center;
+            color:#666;
+            border-bottom:1px solid #ddd;
+            border-right:1px solid #ddd;
+        }
+    }
+    .tab_nav{
+        display:flex;
+        justify-content:space-around;
+        border-bottom:1px solid #ddd;
+        span{
+            height:.45rem;
+            line-height:.45rem;
+            font-size:.12rem;  
+            color:#666;  
+            i{
+                display:inline-block;
+                background:url(../static/imgs/tb.png) -173px -10px no-repeat;
+                background-size:200px 200px;
+                vertical-align:top;
+                height:.45rem;
+                width:.1rem;
+                
+            }        
+        }
+    }
+    ul{
+        display:flex;
+        padding-left:.08rem;
+        flex-wrap:wrap;
+        li{
+            margin-top:.08rem; 
+            width:50%;                      
+            justify-content:space-around;
+            a{   
+                display:block;             
+                margin:0 .08rem 0 0; 
+                border:1px solid #ddd;  
+                padding:0;
+                width:auto;          
+                img{
+                    width:97%;
+                    height:1.81rem;                
+                    margin:.03rem auto 0;
+                }
+                div{  
+                    padding:.06rem;              
+                    p{
+                        font-size:.11rem;
+                    }
+                    p:nth-of-type(1),p:nth-of-type(3){
+                        color:#232323;
+                    }
+                    p:nth-of-type(2){
+                        width:100%;
+                        white-space:nowrap;
+                        overflow:hidden;
+                        text-overflow:ellipsis;
+                        color:#777777;
+                    }
+                    p:nth-of-type(3){
+                        font-size:.1rem;
+                    }
+                }
+            }
+        }
+    }
+}

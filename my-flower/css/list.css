@@ -1,0 +1,76 @@
+#list .top {
+  display: flex;
+  justify-content: space-between;
+  padding: .1rem .06rem;
+  height: .45rem; }
+  #list .top img {
+    width: .24rem;
+    height: .24rem; }
+  #list .top img:nth-child(2) {
+    width: .7rem;
+    height: .17rem;
+    margin-top: .05rem; }
+#list .nav {
+  display: flex;
+  font-size: .12rem;
+  justify-content: space-around;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd; }
+  #list .nav a {
+    flex: 1;
+    height: .42rem;
+    line-height: .42rem;
+    text-align: center;
+    color: #666;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd; }
+#list .tab_nav {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #ddd; }
+  #list .tab_nav span {
+    height: .45rem;
+    line-height: .45rem;
+    font-size: .12rem;
+    color: #666; }
+    #list .tab_nav span i {
+      display: inline-block;
+      background: url(../static/imgs/tb.png) -173px -10px no-repeat;
+      background-size: 200px 200px;
+      vertical-align: top;
+      height: .45rem;
+      width: .1rem; }
+#list ul {
+  display: flex;
+  padding-left: .08rem;
+  flex-wrap: wrap; }
+  #list ul li {
+    margin-top: .08rem;
+    width: 50%;
+    justify-content: space-around; }
+    #list ul li a {
+      display: block;
+      margin: 0 .08rem 0 0;
+      border: 1px solid #ddd;
+      padding: 0;
+      width: auto; }
+      #list ul li a img {
+        width: 97%;
+        height: 1.81rem;
+        margin: .03rem auto 0; }
+      #list ul li a div {
+        padding: .06rem; }
+        #list ul li a div p {
+          font-size: .11rem; }
+        #list ul li a div p:nth-of-type(1), #list ul li a div p:nth-of-type(3) {
+          color: #232323; }
+        #list ul li a div p:nth-of-type(2) {
+          width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          color: #777777; }
+        #list ul li a div p:nth-of-type(3) {
+          font-size: .1rem; }
+
+/*# sourceMappingURL=list.css.map */
