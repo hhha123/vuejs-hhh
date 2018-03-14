@@ -5,21 +5,14 @@
   		<a class="icon-arrow-left" @click="back()"></a>
 			<span class="icon-menu"></span>
   	</div>
-  	<div class="box">
-  		<img src="../../static/imgs/empty_cart3.png" alt="" />
-  		<p>别让你的心意空空如也</p>
-  		<a href="#/">去挑选礼物</a>
-  	</div>
-  	<div class="shopTitle">
-  		<span>为你推荐</span>
-  	</div>
+  	<Shopcar/>
     <div class="content">
     	 <ul>
     	 	<li v-for="item in list">
-    	 		<a href="">
-    	 			<img src="../imgs/220x240.jpg"/>
-    	 			<p></p>
-    	 			<font></font>
+    	 		<a href="#">
+    	 			<img :src="item.img"/>
+    	 			<p>{{item.name}}</p>
+    	 			<font class="price">{{item.price}}</font>
     	 		</a>
     	 	</li>
     	 </ul>
@@ -28,9 +21,13 @@
 </template>
 
 <script>
+import Shopcar from './Shopcar';	
 import axios from 'axios';
 export default {
-  name: 'Shopcar',
+  name: 'Section3',
+  components: {
+  	Shopcar
+  },
   data () {
     return {
     	flag: "false",
@@ -43,6 +40,9 @@ export default {
   	}
   },
   mounted() {
+	  	if(this.list.length > 0){
+	  		return;
+	  	}
   	  axios.get("http://localhost:3000/proList")
 	    .then((res)=>{
 	      console.log(res);
@@ -52,4 +52,4 @@ export default {
 }
 </script>
 <style src="../../css/common.css" ></style>	
-<style src="../../css/shopcar.css" scoped></style>
+<style src="../../css/Section3_1.css" scoped></style>

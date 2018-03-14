@@ -31,31 +31,39 @@
     right: .16rem;
     top: .1rem;
 }
-#shopcar .box {
-  font-size: .14rem;
-  }
-  #shopcar .box img {
-    width: 100%;
-    margin: .3rem 0 .1rem 0; }
-  #shopcar .box p {
-    font-size: .14rem;
-    text-align: center; }
-  #shopcar .box a {
-    width: 1.1rem;
-    display: block;
-    height: .32rem;
-    line-height: .32rem;
-    border: 1px solid #fd6602;
-    color: #fd6602;
-    text-align: center;
-    margin: .2rem auto;
-    border-radius: .03rem; }
-#shopcar .shopTitle{
-	border-top: .1rem solid #f4f4f4;
-	color: #111;
+#shopcar .content{
+	width: 100%;
+	overflow: auto;
 	font-size: .14rem;
-	height: .46rem;
-    line-height:.38rem;
-    padding: 0 .1rem;
+}
+.content ul{
+	width: 100%;
+	display: flex;
+	padding-left: .08rem;
+}
+.content ul li{
+	text-align: center;
+	width: .84rem;
+}
+.content ul li a{
+	display: block;
+	margin-right: .2rem;
+	color: #111;
+}
+.content img{
+	width: .64rem;
+	margin-top: .2rem;
+}
+.content p{
+	margin-top: .05rem;
+	font-size: .1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #232323;
+}
+.content .price{
+	font-size: .12rem;
+	line-height: .24rem;
 }
 /*# sourceMappingURL=shopcar.css.map */

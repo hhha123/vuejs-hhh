@@ -5,7 +5,7 @@
 			<a href="#/" class="icon-arrow-left"></a>
 			<span class="icon-menu" @click="showFoot()"></span>
 		</header>
-		<Footer v-show="flag" style="display: none;"/>
+		<Footer v-show="flag"/>
 		<section>
 			<div class="banner">
 				<img src="../../static/m-banner.jpg"/>
@@ -83,7 +83,7 @@ export default{
     data () {
     	return {
     		list:[],
-    		flag: "false"
+    		flag: false
     	}
     },
     methods: {

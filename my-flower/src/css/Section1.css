@@ -156,7 +156,6 @@ section{
     color: #222;
     margin: 0 auto;
     position: relative;
-    z-index: 2;
     line-height: .44rem;
 }
 .modular .pro_list{

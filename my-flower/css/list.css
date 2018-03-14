@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-between;
   padding: .1rem .06rem;
-  height: .45rem; }
+  height: .45rem;
+  border-bottom: 1px solid #ddd; }
   #list .top img {
     width: .24rem;
     height: .24rem; }
@@ -18,16 +19,23 @@
   border-left: 1px solid #ddd; }
   #list .nav a {
     flex: 1;
+    font-size: .14rem;
     height: .42rem;
     line-height: .42rem;
     text-align: center;
     color: #666;
     border-bottom: 1px solid #ddd;
     border-right: 1px solid #ddd; }
+  #list .nav .on {
+    color: #f60;
+    border-bottom: 1px solid #f60; }
 #list .tab_nav {
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid #ddd; }
+  #list .tab_nav .active {
+    font-weight: bold;
+    color: #232323; }
   #list .tab_nav span {
     height: .45rem;
     line-height: .45rem;
@@ -41,13 +49,11 @@
       height: .45rem;
       width: .1rem; }
 #list ul {
-  display: flex;
-  padding-left: .08rem;
-  flex-wrap: wrap; }
+  padding-left: .08rem; }
   #list ul li {
+    float: left;
     margin-top: .08rem;
-    width: 50%;
-    justify-content: space-around; }
+    width: 50%; }
     #list ul li a {
       display: block;
       margin: 0 .08rem 0 0;

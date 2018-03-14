@@ -1,18 +1,16 @@
 <template>
 	<div id="list">		
 	  <div class="top">
-	  	 <img src="../../static/imgs/headChevronLeft.png" alt="" />  
-	  	 <img src="../../static/imgs/logo@2x.png" alt="" />  
-	  	 <img src="../../static/imgs/headerIconMore.png" alt="" />
+	  	 <img src="../../static/imgs/headChevronLeft.png" alt="" @click="back()"/>  
+	  	 <img src="../../static/imgs/logo@2x.png"/>  
+	  	 <img src="../../static/imgs/headerIconMore.png" @click="showFoot()" />
 	  </div>
+	  <Footer v-show="flag"/>
 		<div class="nav">			
-				<a href="">综合</a>
-				<a href="">销量</a>
-				<a href="">价格</a>
-				<a href="">最新</a>			
+				<a href="javascript:;" v-for="(nav,index) in data"  @click="tabsSwitch(index)" :class="{on:nav.isActive}">{{nav.name}}</a>
 		</div>	
 		<div class="tab_nav">
-			<span>全部</span>
+			<span class="active">全部</span>
 			<span>爱情鲜花</span>
 			<span>友情鲜花</span>
 			<span>送长辈鲜花</span>
@@ -21,10 +19,46 @@
 				<i></i>
 			</span>
 		</div>
-		<ul>
+		<ul class="pro_list">
 			<li v-for="item in list">
 				<a href="">
 					<img :src="'../../static/imgs/'+item.src" alt="" />
+					<div>						
+						<p>{{item.p_top}}</p>
+						<p>{{item.p_center}}</p>
+						<p>￥{{item.p_bottom}}</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+		<ul class="pro_list" style="display: none;">
+			<li v-for="item in list">
+				<a href="">
+					<img src="../../static/imgs/9012089.jpg_220x240.jpg" alt="" />
+					<div>						
+						<p>{{item.p_top}}</p>
+						<p>{{item.p_center}}</p>
+						<p>￥{{item.p_bottom}}</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+		<ul class="pro_list" style="display: none;">
+			<li v-for="item in list">
+				<a href="">
+					<img src="../../static/imgs/9010969.jpg_220x240.jpg" alt="" />
+					<div>						
+						<p>{{item.p_top}}</p>
+						<p>{{item.p_center}}</p>
+						<p>￥{{item.p_bottom}}</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+		<ul class="pro_list" style="display: none;">
+			<li v-for="item in list">
+				<a href="">
+					<img src="../../static/imgs/9010011.jpg_220x240.jpg" alt="" />
 					<div>						
 						<p>{{item.p_top}}</p>
 						<p>{{item.p_center}}</p>
@@ -37,10 +71,22 @@
 </template>
 
 <script>
+import Footer from './Footer';
 export default {
   name: 'list',
+  components: {
+  	 Footer
+    },
   data () {
     return {
+    	flag: false,
+    	on: false,
+    	data: [
+                  {name:"综合",isActive: true},
+                  {name:"销量",isActive: false},
+                  {name:"价格",isActive: false},
+                  {name:"最新",isActive: false}
+    	],
     	list:[
     		{
     			src:"9010966.jpg_220x240.jpg",
@@ -103,6 +149,24 @@ export default {
     			p_bottom:"258"
     		}
     	]
+    }
+  },
+  methods: {
+  	back(){
+  		window.history.back();
+  	},
+  	showFoot(){
+    		this.flag = !this.flag;
+   },
+   tabsSwitch(tabIndex){
+   	  var tabList = document.querySelectorAll(".pro_list");
+   	  var len = tabList.length; 
+   	  for(var i = 0; i < len; i++){
+   	  	tabList[i].style.display = "none";  
+        this.data[i].isActive = false;  
+   	  }
+   	   this.data[tabIndex].isActive = true;  
+       tabList[tabIndex].style.display = "block";
     }
   }
 }

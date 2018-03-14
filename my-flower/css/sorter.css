@@ -1,0 +1,77 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: .1rem .06rem;
+  height: .45rem;
+  background: #fafafa;
+  border: 1px solid #e4e4e4; }
+  .top img {
+    width: .24rem;
+    height: .24rem; }
+  .top span {
+    font-size: .18rem;
+    height: .17rem; }
+
+ul {
+  display: flex;
+  border-top: 1px solid #e4e4e4;
+  flex-direction: column; }
+  ul li:nth-child(1):after {
+    background: url(../static/imgs/hot_No1.png) no-repeat top center;
+    background-size: .12rem; }
+  ul li:nth-child(2):after {
+    background: url(../static/imgs/hot_No2.png) no-repeat top center;
+    background-size: .12rem; }
+  ul li:nth-child(3):after {
+    background: url(../static/imgs/hot_No3.png) no-repeat top center;
+    background-size: .12rem; }
+  ul li:nth-child(1):after, ul li:nth-child(2):after, ul li:nth-child(3):after {
+    width: .48rem;
+    padding-top: .12rem;
+    position: absolute;
+    top: .24rem;
+    left: 0;
+    content: "TOP";
+    color: #f60;
+    font-size: .1rem;
+    text-align: center; }
+  ul li {
+    display: flex;
+    height: 1.22rem;
+    padding: .12rem 0;
+    border-bottom: 1px solid #e4e4e4;
+    position: relative; }
+    ul li span {
+      background-size: .12rem;
+      width: .46rem;
+      font-size: .32rem;
+      color: #ff6600;
+      text-align: center;
+      margin-top: .37rem; }
+    ul li a {
+      display: flex; }
+      ul li a img {
+        width: .87rem;
+        height: .95rem; }
+      ul li a div {
+        margin-left: .13rem; }
+        ul li a div P:nth-child(1) {
+          font-size: .11rem;
+          height: .18rem;
+          color: #232323;
+          line-height: .18rem; }
+        ul li a div p:nth-child(2) {
+          font-size: .11rem;
+          color: #9b9b9b;
+          height: .54rem; }
+        ul li a div span {
+          font-size: .18rem;
+          color: #ff6600; }
+          ul li a div span i {
+            margin-left: .03rem;
+            margin-top: .04rem;
+            font-size: .12rem;
+            color: #9b9b9b;
+            text-decoration: line-through; }
+
+/*# sourceMappingURL=sorter.css.map */

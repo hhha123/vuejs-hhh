@@ -21,15 +21,14 @@
 	  					<p>{{item.theme}}</p>
 	  				</div>
 	  			</a>
-	  		
 	  			<div class="right_content">
 	  				<p class="title">
 	  					{{item.title_left}}
-	  					<a href="">{{item.title_right}}</a>
+	  					<a href="#/Sorter">{{item.title_right}}</a>
 	  				</p>  				
 	  				<ul >
 	  					<li :index="obj.index" v-for="(obj,index) in item.pro">  						
-	  						<a href="">
+	  						<a href="#/list">
 			  					<img :src="'../../static/imgs/'+item.pro[index].src" alt="" />
 			  					<p>{{item.pro[index].intr}}</p>
 			  				</a>
@@ -37,12 +36,10 @@
 	  				</ul>  				  				
 	  			</div>  
 	  			<div class="right_content" v-show="item.title_type=='花材'">
-	  				<p class="title" >
-	  					{{item.title_sec}}	  					
-	  				</p>  				
+	  				<p class="title" >{{item.title_sec}}</p>  				
 	  				<ul >
 	  					<li :index="obj.index" v-for="(obj,index) in item.typ">  						
-	  						<a href="">
+	  						<a href="#/list">
 			  					<img :src="'../../static/imgs/'+item.typ[index].src" alt="" />
 			  					<p>{{item.typ[index].intr}}</p>
 			  				</a>
@@ -55,7 +52,7 @@
 	  				</p>  				
 	  				<ul >
 	  					<li :index="obj.index" v-for="(obj,index) in item.type">  						
-	  						<a href="">
+	  						<a href="#/list">
 			  					<img :src="'../../static/imgs/'+item.type[index].src" alt="" />
 			  					<p>{{item.type[index].intr}}</p>
 			  				</a>
@@ -68,7 +65,7 @@
 	  				</p>  				
 	  				<ul class="bor">
 	  					<li :index="obj.index" v-for="(obj,index) in item.color" class="mar0">  						
-	  						<a href="" class="disp">
+	  						<a href="#/list" class="disp">
 			  					<img :src="'../../static/imgs/'+item.color[index].src" alt="" />
 			  					<p>{{item.color[index].intr}}</p>
 			  				</a>
@@ -81,7 +78,7 @@
 	  				</p>  				
 	  				<ul class="bor">
 	  					<li :index="obj.index" v-for="(obj,index) in item.price" class="mar0">  						
-	  						<a href="" class="disp">			  					
+	  						<a href="#/list" class="disp">			  					
 			  					<p>{{item.price[index].intr}}</p>
 			  				</a>
 	  					</li> 	  					
@@ -93,7 +90,7 @@
 	  				</p>  				
 	  				<ul class="bor">
 	  					<li :index="obj.index" v-for="(obj,index) in item.num" class="mar0">  						
-	  						<a href="" class="disp">			  					
+	  						<a href="#/list" class="disp">			  					
 			  					<p>{{item.num[index].intr}}</p>
 			  				</a>
 	  					</li> 	  					
@@ -105,7 +102,7 @@
 	  				</p>  				
 	  				<ul class="bor">
 	  					<li :index="obj.index" v-for="(obj,index) in item.are" class="mar0">  						
-	  						<a href="" class="disp">			  					
+	  						<a href="#/list" class="disp">			  					
 			  					<p>{{item.are[index].intr}}</p>
 			  				</a>
 	  					</li> 	  					
@@ -117,7 +114,7 @@
 	  				</p>  				
 	  				<ul>
 	  					<li :index="obj.index" v-for="(obj,index) in item.cake">  						
-	  						<a href="">
+	  						<a href="#/list">
 			  					<img :src="'../../static/imgs/'+item.cake[index].src" alt="" />
 			  					<p>{{item.cake[index].intr}}</p>
 			  				</a>
@@ -130,7 +127,7 @@
 	  				</p>  				
 	  				<ul class="bor">
 	  					<li :index="obj.index" v-for="(obj,index) in item.use" class="mar0">  						
-	  						<a href="" class="disp">			  					
+	  						<a href="#/list" class="disp">			  					
 			  					<p>{{item.use[index].intr}}</p>
 			  				</a>
 	  					</li> 	  					
@@ -142,7 +139,7 @@
 	  				</p>  				
 	  				<ul class="bor">
 	  					<li :index="obj.index" v-for="(obj,index) in item.gift" class="mar0">  						
-	  						<a href="" class="disp">			  					
+	  						<a href="#/list" class="disp">			  					
 			  					<p>{{item.gift[index].intr}}</p>
 			  				</a>
 	  					</li> 	  					
@@ -155,7 +152,7 @@
 
 <script>	
 export default {
-  name: 'type',
+  name: 'Section2',
   data () {
     return {
     	changeRed:0,
@@ -438,11 +435,7 @@ export default {
   	getIndex(index){     	
   		this.changeRed = index;
   		this.showdata = [];
-//		this.target = index;  		
-//		console.log(this.target);
   		this.showdata.push(this.right_content[index]);
-//    		console.log(this.showdata)
-//		console.log(this.right_content)
   	}
   },
   mounted(){
@@ -451,4 +444,4 @@ export default {
 }
 </script>
 <style src="../../css/common.css"></style>	
-<style src="../../css/type.css" scoped></style>
+<style src="../../css/Section2.css" scoped></style>

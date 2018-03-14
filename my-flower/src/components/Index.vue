@@ -2,10 +2,10 @@
   <div div="el">
 	  <router-view/>
 	  <footer>
-	  	<ul id="foot">
+	  	<ul>
 	  		<li v-for="(item,index) in list" @click="changeImg(index)">
 	  			<router-link active-class="active" :to="item.router" exact>
-	  				<img :src="'../../static/' + item.img"/>
+	  				<img class="foot" :src="'../../static/' + item.img"/>
 	  				<span>{{item.name}}</span>
 	  			</router-link>
 	  		</li>
@@ -27,15 +27,20 @@ export default {
     	]
     }
   },
-  mounted (){
-	 this.changeImg(0);
+  mounted(){
+  	this.changeImg(0);
   },
   methods: {
-	changeImg(index){
-	  		this.list[index].img = "../../static/active" + (index+1) +".png";
-	}
+		changeImg(index){
+			    var Imglist = document.querySelectorAll(".foot");
+			    var len = Imglist.length;
+			    for(var i = 0; i < len; i++){
+			    	this.list[i].img = "foot" + (i+1) +".png";
+			    }
+		  		this.list[index].img = "active" + (index+1) +".png";
+		}
+  }
 }
- }
 </script>
 
 <style scoped>
