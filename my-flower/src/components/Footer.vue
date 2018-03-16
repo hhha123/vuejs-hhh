@@ -1,8 +1,8 @@
 <template>
 	<footer>
-	  	<ul id="foot">
+	  	<ul>
 	  		<li v-for="(item,index) in list">
-	  			<router-link active-class="active" :to="item.router" exact>
+	  			<router-link :to="item.router">
 	  				<img :src="'../../static/' + item.img"/>
 	  				<span>{{item.name}}</span>
 	  			</router-link>
@@ -13,17 +13,17 @@
 
 <script>
 export default {
-  name: 'Footer',
-  data () {
-    return {
-    	list:[
-    	     {router:"/",img:"foot1.png",name:"首页"},
-    	     {router:"Section2",img:"foot2.png",name:"分类"},
-    	     {router:"Section3",img:"foot3.png",name:"购物车"},
-    	     {router:"Section4",img:"foot4.png",name:"我的"}
-    	]
+    name: 'Footer',
+    data () {
+	    return {
+	    	list:[
+	    	     {router:"/",img:"foot1.png",name:"首页"},
+	    	     {router:"Section2",img:"foot2.png",name:"分类"},
+	    	     {router:"Section3",img:"foot3.png",name:"购物车"},
+	    	     {router:"Section4",img:"foot4.png",name:"我的"}
+	    	]
+	    }
     }
-  }
  }
 </script>
 
@@ -32,6 +32,7 @@ img{display:inline-block;border:0;vertical-align: middle;}
 footer{
 	height: auto;
 	background: #fff;
+	border-bottom: 1px solid #E4E4E4;
 }
 footer ul{
 	width: 100%;

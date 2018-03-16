@@ -11,7 +11,7 @@
 
 <script>
 export default {
-   name: "Swiper",
+   name: "swiper",
    mounted() {
    	  this.$nextTick(function(){
    	  	  var mySwiper = new Swiper('.swiper-container',{

@@ -66,4 +66,41 @@
 	font-size: .12rem;
 	line-height: .24rem;
 }
-/*# sourceMappingURL=shopcar.css.map */
+.end{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: .5rem;
+	width: 100%;
+	z-index: 2;
+	background: #e4e4e4;
+	line-height: .5rem;
+}
+.end span{
+	color: #232323;
+    margin-left:.24rem;
+}
+.end span .total{
+    color: #FE6600;
+    font-size: .16rem;
+}
+.end span .total:before{
+	content: "￥";
+}
+.end button{
+	float: right;
+    width: 1.23rem;
+    height: 100%;
+    font-size: .16rem;
+    background: #FE6600;
+    color: #fff;
+    border: 0;
+    outline: 0;
+}
+.total-num:before{
+	content: "(";
+}
+.total-num:after{
+	content: ")";
+}

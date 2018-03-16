@@ -8,6 +8,12 @@ import Section4 from '@/components/Section4'
 import sort from '@/components/sort'
 import list from '@/components/list'
 import Sorter from '@/components/Sorter'
+import Login from '@/components/Login'
+import Regist from '@/components/Regist'
+import Page from '@/components/Page'
+import ZhucePhone from '@/components/ZhucePhone'
+import ZhuceYx from '@/components/ZhuceYx'
+import judge from '@/components/judge'
 
 Vue.use(Router)
 
@@ -54,6 +60,38 @@ export default new Router({
         path:'/Sorter',
 	      name: 'Sorter',
 	      component: Sorter
+    },
+    {
+        path:'/login',
+	      name: 'Login',
+	      component: Login
+    },
+    {
+        path:'/regist',
+	      name: 'Regist',
+	      component: Regist,
+	      children: [
+	          {
+			        path:'',
+				      name:'ZhucePhone',
+				      component: ZhucePhone,
+		        },  
+			      {
+			        path:'ZhuceYx',
+				      name: 'ZhuceYx',
+				      component: ZhuceYx,
+		        } 
+	      ]
+    },
+    {
+        path:'/page',
+	      name: 'Page',
+	      component: Page
+    },
+    {
+        path:'/judge',
+	      name: 'judge',
+	      component: judge
     }
   ]
 })

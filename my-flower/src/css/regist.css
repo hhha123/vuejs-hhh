@@ -1,0 +1,148 @@
+.registCon{
+	width:100%;
+}
+.regist_h{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left:.15rem;
+	padding-right: .15rem;
+	padding:0 0.05rem;
+	background: rgba(250,250,250,0.9);
+    height: .44rem;
+    border-bottom: 1px solid #e4e4e4;
+}
+.regist_h img{
+	width:.24rem;
+	height:.24rem;
+}
+.regist_h p{
+	font-size:.14rem;
+}
+.content{
+	
+}
+.menu{
+	height:.31rem;
+	margin: 0.07rem 0.06rem;
+    border-radius: 0.03rem;
+    border: 1px solid rgb(254,108,108);
+    border-image: none;
+    -webkit-border-radius: 0.03rem;
+}
+.menu a{
+	width: 50%;
+    text-align: center;
+    line-height: .29rem;
+    font-size: .14rem;
+    display: block;
+    float:left;
+}
+.graybg{
+	 background: rgb(254,108,108);
+     color: rgb(255, 255, 255);
+}
+.whitebg{
+    color: rgb(51,51,51);
+}
+.login-mc{
+	margin-top: .1rem;
+    margin-right: 0;
+    margin-bottom: 0px;
+    margin-left: 0;
+    padding: 0.06rem 0.08rem;
+}
+.login-mc>div{
+ 	margin-bottom: 10px;
+}
+.common-input-user{
+	background-color: #F9F9F9;
+    border: 1px solid #e2e2e2;
+    border-radius: 0.03rem;
+    box-shadow: 0;
+    font-size: .14rem;
+    height: .42rem;
+    line-height: .42rem;
+    padding: 8px 0;
+    width: 100%;
+    text-indent: 0.08rem;
+    -webkit-appearance: none;
+    outline: none;
+}
+.login-mc>div span{
+	text-align: center;
+	line-height: .3rem;
+	position: absolute;
+    top: 7px;
+    right: 0px;
+    width: 70px;
+    padding: 0px 7px;
+    border-left: 1px solid #e2e2e2;
+}
+.btnA{
+	float: right;
+    display: inline-block;
+    border: 1px solid #f60;
+    color: #f60;
+    width: 46%;
+    margin-left: 3%;
+    box-sizing: border-box;
+    text-align: center;
+    height: .42rem;
+    line-height: .4rem;
+    border-radius: 0.03rem;
+    padding-right: 0px;
+}
+.sub_btn{
+	 display: block;
+    background: -webkit-gradient(linear,left top,left bottom,from(#F60),to(#F60));
+    background: -moz-linear-gradient(top,#F60,#F60);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F60',endColorstr='#F60');
+    background-color: #F60;
+    border: none;
+    width: 100%;
+    margin: .1rem auto 0;
+    height: .42rem;
+    line-height: .42rem;
+    color: #fff;
+    font-size: .17rem;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 0.03rem;
+    -webkit-border-radius: 0.03rem;
+
+}
+.pswCon{
+	position: relative;
+}
+.switchbtn{
+	position: absolute;
+    background: url(../imgs/switchbtn.png) .57rem;
+    background-size: 1.08rem .3rem;
+    display: block;
+    height: .3rem;
+    width: .54rem;
+    right: 0.06rem;
+    top: 0.06rem;
+}
+.setPsw2{
+	width: 100%;
+    border: 1px solid #e2e2e2;
+    font-size: .14rem;
+    background-color: #F9F9F9;
+    height: .42rem;
+    line-height: .24rem;
+    padding: 0.08rem 0;
+    text-indent: 0.08rem;
+    -webkit-appearance: none;
+    outline: none;
+}
+.bottom{
+	padding-left: .1rem;
+    text-decoration: underline;
+    overflow: hidden;
+    height: .3rem;
+}
+.bottom a{
+	color: #666;
+}

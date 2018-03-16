@@ -14,6 +14,10 @@ module.exports = {
     	"/subject": {
     		target: "https://apiv2.pinduoduo.com",
     		changeOrigin: true
+    	},
+    	"/api": {
+    		 target: "http://localhost:3000",
+    		 changeOrigin: true
     	}
     },
 

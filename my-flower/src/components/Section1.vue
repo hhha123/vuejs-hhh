@@ -3,10 +3,10 @@
 		<header>
 	      <img src="../imgs/logo.png" class="logo"/>
 	      <div class="header_right">
-		      <a href="#" class="search">
+		      <a href="javascript:;" class="search">
 		      	<span></span>白色情人节鲜花
 		      </a>
-		      <div class="login"><a href="#">登录</a></div>
+		      <div class="login"><a href="#/login">登录</a></div>
 	      </div>
 	    </header>
 	    <section>
@@ -21,45 +21,45 @@
 					<li>认证龙头企业</li>
 					<li>13年品牌</li>
 					<li>3小时送花</li>
-					<li>最近<a href="javascript:;">242927</a>条好评</li>
+					<li>最近<a href="#/judge">242927</a>条好评</li>
 				</ul>
 			</div>
 			<div class="pro_cate">
-				<a href="javascript:;" class="proHua">
+				<a href="#/list" class="proHua">
 					<img src="../imgs/hua1.png" />
 					<span>鲜花</span>
 				</a>
-				<a href="javascript:;" class="proHua">
+				<a href="#/list" class="proHua">
 					<img src="../imgs/hua2.png" />
 					<span>永生花</span>
 				</a>
-				<a href="javascript:;" class="proHua">
+				<a href="#/list" class="proHua">
 					<img src="../imgs/hua3.png" />
 					<span>蛋糕</span>
 				</a>
-				<a href="javascript:;" class="proHua">
+				<a href="#/list" class="proHua">
 					<img src="../imgs/hua4.png" />
 					<span>礼品</span>
 				</a>
-				<a href="javascript:;" class="proHua">
+				<a href="#/list" class="proHua">
 					<img src="../imgs/hua5.png" />
 					<span>巧克力</span>
 				</a>
 			</div>
 			<div class="flower_cate pro_cate">
-				<a href="javascript:;" class="proHua">
+				<a href="#/list" class="proHua">
 					<img src="../imgs/hua_01.png" />
 					<span>爱情鲜花</span>
 				</a>
-				<a href="javascript:;" class="proHua">
+				<a href="#/list" class="proHua">
 					<img src="../imgs/hua_02.png" />
 					<span>友情鲜花</span>
 				</a>
-				<a href="javascript:;" class="proHua">
+				<a href="#/list" class="proHua">
 					<img src="../imgs/hua_03.png" />
 					<span>送长辈鲜花</span>
 				</a>
-				<a href="javascript:;" class="proHua">
+				<a href="#/list" class="proHua">
 					<img src="../imgs/hua_04.png" />
 					<span>商务鲜花</span>
 				</a>
@@ -73,7 +73,7 @@
 	    		<ul>
 	    			<li v-for="item in data">
 	    				<div class="pro_item" v-lazy="item">
-	    					<a href="javascript:;">
+	    					<a href="#/page">
 	    						<img :src="'../../static/' + item.imgUrl" />
 	    						<div class="pro_infor">
 	    							<p class="name">{{item.name}}</p>
@@ -86,7 +86,7 @@
 	    		</ul>
 	    	</article>
 	    	<p class="more">
-	    		<a href="javascript:;" class="icon-more">全部鲜花</a>
+	    		<a href="#/sort" class="icon-more">全部鲜花</a>
 	    	</p>
 	    </div>
 	    <div class="modular">
@@ -98,7 +98,7 @@
 	    		<ul>
 	    			<li v-for="item in list">
 	    				<div class="pro_item" v-lazy="item">
-	    					<a href="javascript:;">
+	    					<a href="#/page">
 	    						<img :src="item.image_url"/>
 	    						<div class="pro_infor">
 	    							<p class="name">{{item.short_name}}</p>
@@ -111,7 +111,7 @@
 	    		</ul>
 	    	</article>
 	    	<p class="more">
-	    		<a href="javascript:;" class="icon-more">全部水果</a>
+	    		<a href="#/sort" class="icon-more">全部水果</a>
 	    	</p>
 	    </div>
 	    <div class="modular">

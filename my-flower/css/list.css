@@ -2,8 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: .1rem .06rem;
-  height: .45rem;
-  border-bottom: 1px solid #ddd; }
+  height: .45rem; }
   #list .top img {
     width: .24rem;
     height: .24rem; }

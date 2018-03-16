@@ -1,0 +1,175 @@
+/*---login---*/
+.contain{
+	width:100%;
+}
+.login-h{
+	display: flex;
+	justify-content: space-between;
+	padding-left:.15rem;
+	padding-right: .15rem;
+	height:.45rem;
+	align-items: center;
+	background: rgba(250,250,250,0.9);
+    border-bottom: 1px solid #e4e4e4
+}
+.login-h img{
+	width:.24rem;
+	height:.24rem;
+}
+.login-h p{
+	font-size:.14rem;
+}
+.phoneYZ{
+	margin: 0 0.05rem;
+	height:.38rem;
+}
+.phoneYZ>a{
+	display: block;
+    float: right;
+    line-height: .38rem;
+    color: #f60;
+    cursor: pointer;
+    font-size: .12rem;
+}
+.email_autocomplete{
+	
+	width:3.59rem;
+	height:.42rem;
+	margin:0 auto;
+	margin-bottom:.1rem;
+}
+.common-input-user{
+	background-color: #F9F9F9;
+    border: 1px solid #e2e2e2;
+    font-size: 1em;
+    height: .42rem;
+    line-height: .42rem;
+    padding: 0.08rem 0;
+    width: 100%;
+    text-indent: 0.08rem;
+    -webkit-appearance: none;
+    outline: none;
+    width:3.61rem;
+    margin:0 auto;
+}
+.chboc{
+	margin-left: .1rem;
+    height: .18rem;
+    width: .18rem;
+    line-height: .18rem;
+    margin-right: 0.02rem;
+    vertical-align: middle;
+}
+.btn{
+	display: block;
+    background: -webkit-gradient(linear,left top,left bottom,from(#F60),to(#F60));
+    background: -moz-linear-gradient(top,#F60,#F60);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F60',endColorstr='#F60');
+    background-color: #F60;
+    border: none;
+    width: 100%;
+    margin: .1rem auto 0;
+    height: .4rem;
+    line-height: .4rem;
+    color: #fff;
+    font-size: .16rem;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 0.03rem;
+    -webkit-border-radius: 0.03rem;
+    padding: 0 0.1rem;
+}
+.login_am{
+	 padding: .2rem 0.05rem;
+    margin-bottom: 0px!important;
+
+}
+.zhmm{
+	float:right;
+	color:#666;
+    position: relative;
+    display: block;
+    height: .2rem;
+    line-height: .2rem;
+}
+.zhmm:after{
+    display: inline-block;
+    width: .14rem;
+    height: .14rem;
+    content: '';
+    position: absolute;
+    top: 0.03rem;
+    bottom: 0.03rem;
+    left: -.18rem;
+    background: url(../imgs/login_mm.png) no-repeat;
+    background-size: .14rem .14rem;
+}
+.zhc{
+	float:left;
+    position: relative;
+    left: .16rem;
+    display: block;
+    height: .2rem;
+    line-height: .2rem;
+    color:#666;
+}
+.zhc:before{
+	display: inline-block;
+    width: .15rem;
+    height: .15rem;
+    content: '';
+    position: absolute;
+    top: 0.02rem;
+    bottom: 0.03rem;
+    left: -.18rem;
+    background: url(../imgs/login_zc.png) no-repeat;
+    background-size: .14rem .16rem;
+
+}
+.else_box{
+ 	margin: .3rem auto;
+    padding: 0 0 .15rem;
+    position: relative;
+}
+p{
+    -webkit-tap-highlight-color: transparent;
+}
+.row_line{
+	position: absolute;
+    top: .2rem;
+    height: 1px;
+    width: 80%;
+    margin-left: 10%;
+    background-color: #ddd;
+    z-index: 0;
+}
+.else_way{
+	color: #333;
+    font-size: .15rem;
+    line-height: .34rem;
+    text-align: center;
+    background: #fff;
+    width: 1.15rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: 999;
+    margin-bottom: .1rem;
+}
+.else_icon{
+	margin-top:-.35rem;
+	display:flex;
+	justify-content: center;
+}
+.else_icon>li{
+	width:.44rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color:#666;
+
+}
+.else_icon img{
+	width:.44rem;
+	height:.44rem;
+}

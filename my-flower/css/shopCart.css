@@ -137,4 +137,96 @@
 .shop_nav a:nth-child(2){
 	width: 40%;
 }
-/*# sourceMappingURL=shopCart.css.map */
+.layer{
+	width: 100%;
+  height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #000;
+  opacity: 0.3;
+  z-index: 5;
+}
+.layer-infor{
+	position: fixed;;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	height: 3rem;
+	background-color: #fff;
+	border-radius: .02rem;
+	z-index: 10;
+	padding: .16rem .16rem 0;
+}
+.sku-name{
+	display: flex;
+	border-bottom: 1px solid #E4E4E4;
+  height: 1rem;
+}
+.sku-name img{
+	width: .86rem;
+}
+.sku-text{
+	margin-left: .3rem;
+}
+.sku-text p{
+	  font-size: .14rem;
+	  font-weight: bold;
+    color: #232323;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-top: .18rem;
+}
+.sku-text span{
+	  font-size: .18rem;
+    color: #FE6600;
+    font-weight: 700;
+    margin-top: .08rem;
+}
+.sku-guige{
+	  font-size: .14rem;
+	  padding: .16rem 0 .5rem;
+}
+.sku-guige p{
+	font-weight: bold;
+}
+.sku-guige ul{
+	margin-top: .08rem;
+}
+.sku-guige ul li{
+	  float: left;
+    border: 1px solid #9B9B9B;
+    border-radius: .02rem;
+    color: #9B9B9B;
+    height: .32rem;
+    line-height: .32rem;
+    padding: 0 .06rem;
+    margin: 0 .09rem .09rem 0;
+    font-size: .12rem;
+}
+.sku-guige ul li.active{
+	  color: #FE6600;
+    border-color: #FE6600;
+}
+.sku-ok{
+	  width: 100%;
+	  height: .5rem;
+    line-height: .5rem;
+    background: #FE6600;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.layer-icon{
+	width:.3rem ;
+	height: .3rem;
+	position: absolute;
+	right: 0;
+	bottom: 2.85rem;
+	background: url(../static/imgs/icon.png) no-repeat -149px -31px;
+	z-index: 15;
+}
